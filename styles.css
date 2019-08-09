@@ -1,0 +1,49 @@
+body {
+	background-image:url(photos/site/background.jpg);
+	cursor: url(photos/site/cursor.png), auto;
+}
+
+.indexContent {
+	margin:auto;
+	border:2px white solid;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+	background-color:black;
+}
+
+.listTitle {
+	text-shadow:3px 2px 0 purple;
+}
+
+#mainContent {
+	margin:auto;
+	background-color:black;
+	width:800px;
+}
+
+#mainHeader {
+	margin:auto;
+	text-align:center;
+	color:white;
+	text-shadow:5px 3px 0 purple;
+	border:2px white solid;
+	width:800px;
+	background-color:black;
+	
+}
+
+#headerImage {
+	max-width:800px;
+}
+	
+a {
+	color:white;
+}
+
+.releaseInfo {
+	list-style-type:none;
+	text-align:center;
+	display:inline;
+	padding:0;
+}

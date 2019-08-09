@@ -1,3 +1,3 @@
-var audio = new Audio("sounds/largecash.wav");
+var audio = new Audio("sounds/largecash2.wav");
 audio.play();
 

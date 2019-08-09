@@ -1,4 +1,4 @@
-var popupChance = Math.floor((Math.random() * 4) + 1);
+var popupChance = Math.floor((Math.random() * 2) + 1);
 
 if (popupChance == 1) {
 i = 1;

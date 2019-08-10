@@ -39,6 +39,7 @@ body {
 	
 a {
 	color:white;
+	cursor: url(photos/site/cursor3.png), auto;
 }
 
 .releaseInfo {

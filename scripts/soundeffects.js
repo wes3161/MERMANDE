@@ -9,4 +9,10 @@ if (x < 33) {
   var audio = new Audio("sounds/largecash.wav");
 }
 // play audio
-audio.play();
+// audio.play();
+// new magic from stack exchange that says it might make it play in chrome
+var promise = audio.play();
+if (promise) {
+    //Older browsers may not return a promise, according to the MDN website
+    promise.catch(function(error) { console.error(error); });
+}

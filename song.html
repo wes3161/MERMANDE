@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>LARGE CASH ENTERTAINMENT</title>
-		<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 		<link rel="shortcut icon" href="photos/site/favicon.png" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -15,12 +14,11 @@
 			<div class="indexContent">
 				<h1 class="listTitle">TRUE CA$H SONGS</h1>
 				 <div class='text-container'>
-                        <p>Do Electric Neural Nets Dream Of Anime Shows?</p>
                         <div id="snippet-container"></div>
             <script>
             
 
-            var totalTexts  = 125254;
+            var totalTexts  = 2;
 
             /* load random GPT-2-small text snippet: */
             function inject_snippet(id) {
@@ -29,7 +27,7 @@
                     document.querySelector("#snippet-container").innerHTML = req.responseText.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g,"<br/>\n");
                 });
                 //req.open("GET", `//www.mermande.com/text-${idText}.txt`);
-                req.open("GET", `//mermande.com/song1.txt`);
+                req.open("GET", `//mermande.com/songs/song-1.txt`);
                 req.send();
             }
             var id ="test123";
@@ -37,12 +35,6 @@
             inject_snippet(text_id);
         </script>
 				<br>
-				<h3>
-					<a href="https://soundcloud.com/cash_floe">Ca$h Floe</a>
-				</h3>
-				<h3>
-					<a href="https://soundcloud.com/bigmacbleu">Big Mac Bleu</a>
-				</h3>
 			</div>
 		</div>
 	</body>

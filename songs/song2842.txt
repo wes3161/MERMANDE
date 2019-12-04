@@ -1,0 +1,164 @@
+YOU CAN GET BETTER AIRCRAFT AROUND SOUTH CAROLINA EXAMINEE
+(UREPIABLES)
+I just went and bought some gold-plated rims
+They go pretty well with my gold-plated trim
+
+
+I am pleased with my purchase cause they both match my grill
+Im sicker than an old man takin cancer pills
+
+
+Advanced auto parts better give up for good
+cause autozone the only thing im reppin in my hood
+
+
+Ring ring thats yo girl made in the garage
+Shootin up yo girl comin at her brick
+7 dead already in the family unit
+Better start by already overdosin things
+Most of my carotassettesry went like this:
+glide, skids, rain
+
+I upped the ante a notch with the dash
+Restructuring the body of select Rokinon spare parts
+Additive coupling devices allow for greater flex and roll
+exhaust gases can reach more than 1,000 FPS
+Increased drag will worse-than-thou peaks
+Advanced airbags but don't scale with the weight
+Ion bombs can hit starboard objects
+8-bit mp3 players were never intended to play
+Drivinin in a Lamborghini
+5-gallon max storage
+An undercarriage cracking
+Inside my rearview mirror I always look like I'm ill
+
+Snapchatming in the garage, script vending shops
+Hungry for noodles, my stepmom (u)
+‿pye dopapa sink like a yacht (yuh)
+
+Pullin up in that Lamborghini
+wooferiller>
+
+Fuente a la sujetria
+Quadruple cup flex
+Painted white transaction tellers>
+Pull out my cell phone
+Tellin people I live in the home
+Im having a party for a friend
+Three cone fallas are about to party
+Iont cut it, they askin where im from
+Im down the street
+Homeless people all over the place
+
+End up on the news
+
+Complaining about......
+the preliminary injunction
+What would you do if you had to walk in my shoes?
+I got a different pair of shoes for each day of the week
+
+Everyday im out here different - only I Defense!
+
+They askin where im at?
+Just saying
+I got Monica, Yvette, and Lacey
+So why not take them off?
+Put 'em on the news more often
+Cause I cant pass sobriety
+
+But they askin where im at?
+I got Lacey, Shabazz
+Broke up like an diamond
+5 live board spots
+Got my arm around ya
+Got some of that Rastafari
+
+Got my wrist around your neck
+We need your help getting out of the car
+Pullin up in that Lambo
+Pullin up in that Lambo
+
+Got your arm around ya your neck
+Got my wrist around your neck
+We need your help getting out of the car
+
+Help Rick find better work
+He thought he was gay
+Hehe
+10 fl.sp diathas
+We gon get ya
+'Haters luther than a man
+Messin with my kids like a pro
+Like. Blaster. Like. Smart.
+Like. Musings. Like (expletive) Meakin
+Wanna try and talk basketball?
+Try to stuff my face with duct tape
+Cause even though I know how to use it, i still drool
+
+All this video saying im a pro makes me wanna meet some really bad people
+
+Messin with my brain drifts, like im trying to talk
+
+So i go in first, trying to talk
+But I can't - I cant - i can't -
+
+I so often get discouraged
+Because at least imHealthy
+ I wont pass any alcohol
+Charity is so, so alive
+And so very tasty
+I consume so much fat
+that I almost fall - tsk tsk tsk
+
+But I don't need every single drop
+I consume so much fat that I almost - tsk tsk tsk
+
+I should have bought autotune
+
+Restarted my flow
+ Stopped the flow
+
+And tried to think of a single better
+Take a deep breath and start over
+All this playing is distraction
+
+Try to think better of yourself
+
+And you think you're being thinkly
+All this single thought giving
+Something wrong with you ?
+Try again later
+I really need to hear from you
+The truth is that I don't really need any of this 'cha
+You could easily break this keyboard
+Like I was a telephone
+So I could give you a functionary key
+Addicted to code
+So that you may be able to play with us for a very, very, very, very, very,
+^CTraceback (most recent call last):
+  File "./src/generate_unconditional_samples.py", line 77, in <module>
+    fire.Fire(sample_model)
+  File "/usr/local/lib/python3.5/dist-packages/fire/core.py", line 138, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/usr/local/lib/python3.5/dist-packages/fire/core.py", line 471, in _Fire
+    target=component.__name__)
+  File "/usr/local/lib/python3.5/dist-packages/fire/core.py", line 675, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "./src/generate_unconditional_samples.py", line 69, in sample_model
+    out = sess.run(output)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+KeyboardInterrupt
+# exit
+
+Script done on Wed Dec  4 13:11:55 2019

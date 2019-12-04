@@ -16,12 +16,11 @@
 			<div class="indexContent">
 				<h1 class="listTitle">TRUE CA$H SONGS</h1>
 				 <div class='text-container'>
-                        <p>Do Electric Neural Nets Dream Of Anime Shows?</p>
                         <div id="snippet-container"></div>
             <script>
             
 
-            var totalTexts  = 125254;
+            var totalTexts  = 2;
 
             /* load random GPT-2-small text snippet: */
             function inject_snippet(id) {
@@ -33,8 +32,8 @@
                 req.open("GET", `//mermande.com/songs/song1.txt`);
                 req.send();
             }
-            var id ="test123";
-            text_id = id;
+		    
+            idText = Math.floor(Math.random() * totalTexts);
             inject_snippet(text_id);
         </script>
 				<br>

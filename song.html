@@ -5,107 +5,7 @@
 		<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 		<link rel="shortcut icon" href="photos/site/favicon.png" />
 		<link rel="stylesheet" href="styles.css" />
-		        <style>
-            html {
-                box-sizing: border-box;
-            }
-            *, *::before, *::after {
-                box-sizing: inherit;
-            }
-            html, body {
-                margin: 0;
-                padding: 0;
-            }
-            img {
-                border: 1px solid #444;
-                max-width: 100%;
-                max-height: 100%;
-                width: auto;
-                height: auto;
-            }
-            #content-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-            #content-container > * {
-                height: calc(100vh - 16em)
-            }
-            #content-container .image-container {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-end;
-                padding: 1em 1em 0 1em;
-            }
-            #content-container .text-container {
-                max-width: 512px;
-                padding: 0 0 1em 0;
-                margin: 0 1em;
-                border-bottom: 1px solid #999;
-            }
-            #content-container .text-container > p {
-                font-style: italic;
-                border-bottom: 1px solid #999;
-                padding: 0 0 1em 0;
-            }
-            #snippet-container {
-                max-height: calc(100% - 5em);
-                overflow: auto;
-                font-family: Inconsolata, monospace;
-                font-size: 0.875em;
-                padding: 0 1em;
-            }
-            @supports (hyphens:auto) {
-                #snippet-container {
-                    text-align: justify;
-                    hyphens: auto;
-                }
-            }
-            @media only screen and (max-width: 960px) {
-                #content-container {
-                    grid-template-columns: 1fr;
-                    justify-items: center;
-                }
-                #content-container > * {
-                    height: 100vw;
-                    max-height: 50vh;
-                }
-                @supports (width: -moz-fit-content) {
-                    #content-container > * {
-                        width: -moz-fit-content;
-                    }
-                }
-                @supports (width: fit-content) {
-                    #content-container > * {
-                        width: fit-content;
-                    }
-                }
-                #content-container .image-container {
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-            @media only screen and (max-width: 960px) {
-                p {
-                    margin: 0.75em auto 0.25em auto;
-                }
-                body > div > p {
-                    font-size: 0.875em;
-                }
-                body > div:first-child > p:nth-child(2) {
-                    font-size: 0.75em;
-                }
-                body > div:nth-child(2) > p {
-                    margin: 0.5em;
-                }
-                #content-container .text-container > p {
-                    padding: 0 0 0.5em 0;
-                }
-                #content-container .image-container {
-                    padding: 0;
-                    margin: 0.5em;
-                }
-            }
-        </style>
+		
 	</head>
 	<body>
 		<div id="mainHeader">
@@ -130,7 +30,7 @@
                     document.querySelector("#snippet-container").innerHTML = req.responseText.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g,"<br/>\n");
                 });
                 //req.open("GET", `//www.mermande.com/text-${idText}.txt`);
-                req.open("GET", `//mermande.com/test.txt`);
+                req.open("GET", `//mermande.com/songs/song-1.txt`);
                 req.send();
             }
             var id ="test123";

@@ -29,11 +29,12 @@
                     document.querySelector("#snippet-container").innerHTML = req.responseText.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g,"<br/>\n");
                 });
                 //req.open("GET", `//www.mermande.com/text-${idText}.txt`);
-                req.open("GET", `//mermande.com/songs/song1.txt`);
+                req.open("GET", `//mermande.com/songs/song${idText}.txt`);
                 req.send();
             }
 		    
             idText = Math.floor(Math.random() * totalTexts);
+            var text_id="1";
             inject_snippet(text_id);
         </script>
 				<br>

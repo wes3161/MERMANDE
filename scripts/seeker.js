@@ -4,7 +4,7 @@ window.onload=function(){
 	document.getElementById("nextBtn").addEventListener("click", playNext);
 	document.getElementById("prevBtn").addEventListener("click", playPrev);
 
-	var pos = Math.floor((Math.random() * (song.length - 1)) + 1);
+	var pos = Math.floor(Math.random() * (song.length - 1));
  	document.getElementById("scPlayer").src = song[pos];
 
 	function playNext(){

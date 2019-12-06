@@ -49,3 +49,18 @@ a {
 	display:inline;
 	padding:0;
 }
+
+#seeker{
+	display:flex;
+	margin:auto;
+	width:500px;
+}
+
+.playBtn{
+	margin:auto;
+	border:1px white solid;
+	background:purple;
+	width:60px;
+	font-size:large;
+	cursor: url(photos/site/cursor3.png), auto;
+}

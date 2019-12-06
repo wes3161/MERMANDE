@@ -1,5 +1,6 @@
 body {
 	background-image:url(photos/site/background.gif);
+	background-size: cover;
 	cursor: url(photos/site/cursor.png), auto;
 }
 

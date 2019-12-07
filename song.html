@@ -16,8 +16,10 @@
 		<br>
 		<div id="mainContent">
 			<div class="indexContent">
+                <div id="prevBtn" class="refresh" onclick="inject_snippet()">REFRESH</div>
 				<h1 class="listTitle">TRUE CA$H SONGS</h1>
 				 <div class='text-container'>
+                        <!-- <p><b>A Ca$hFloe Song Generator Using GPT-2</b> <a href="url">learn more</a></p> -->
                         <div id="snippet-container"></div>
             <script>
             
@@ -26,6 +28,9 @@
 
             /* load random GPT-2-small text snippet: */
             function inject_snippet(id) {
+                // rand text
+                idText = Math.floor(Math.random() * totalTexts);
+                
                 let req = new XMLHttpRequest();
                 req.addEventListener("load", (event) => {
                     document.querySelector("#snippet-container").innerHTML = req.responseText.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g,"<br/>\n");
@@ -36,9 +41,7 @@
                 console.log(`mermande.com/songs/song${idText}.txt`);
             }
 		    
-            idText = Math.floor(Math.random() * totalTexts);
-            var text_id="1";
-            inject_snippet(text_id);
+		    inject_snippet();
         </script>
 				<br>
 			</div>

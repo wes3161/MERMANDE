@@ -60,7 +60,16 @@ a {
 	margin:auto;
 	border:1px white solid;
 	background:purple;
-	width:60px;
+	width:auto;
+	font-size:large;
+	cursor: url(photos/site/cursor3.png), auto;
+}
+
+.refresh{
+	margin:auto;
+	border:1px white solid;
+	background:purple;
+	width:auto;
 	font-size:large;
 	cursor: url(photos/site/cursor3.png), auto;
 }

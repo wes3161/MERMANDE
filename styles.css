@@ -1,7 +1,8 @@
 body {
-    background-color: black;
-    background-size: cover;
+	background-image:url();
+	background-size: cover;
 	cursor: url(photos/site/cursor.png), auto;
+	overflow-x:hidden;
 }
 
 .indexContent {
@@ -65,11 +66,27 @@ a {
 	cursor: url(photos/site/cursor3.png), auto;
 }
 
-.refresh{
+#adspace {
 	margin:auto;
-	border:1px white solid;
-	background:purple;
-	width:auto;
-	font-size:large;
-	cursor: url(photos/site/cursor3.png), auto;
+	top:100px;
+	position:sticky;
 }
+
+.ad > img{
+	width:100%;
+	border:1px black solid;
+}
+
+#ad1div {
+	margin:auto;
+	float:left;
+	width:400px;
+	height:300px;
+}
+
+#ad2div {
+	margin:auto;
+	float:right;
+	width:300px;
+	height:700px;
+} 

@@ -21,7 +21,8 @@ body {
 #mainContent {
 	margin:auto;
 	background-color:black;
-	width:800px;
+	width:43%;
+	max-width:800px;
 }
 
 #mainHeader {
@@ -30,13 +31,14 @@ body {
 	color:white;
 	text-shadow:5px 3px 0 purple;
 	border:2px white solid;
-	width:800px;
+	width:43%;
+	max-width:800px;
 	background-color:black;
 	
 }
 
 #headerImage {
-	max-width:800px;
+	max-width:100%;
 }
 	
 a {
@@ -55,6 +57,7 @@ a {
 	display:flex;
 	margin:auto;
 	width:500px;
+	max-width:100%;
 }
 
 .playBtn{
@@ -81,6 +84,7 @@ a {
 }
 
 .ad > img{
+	height:auto;
 	width:100%;
 	border:1px black solid;
 }
@@ -98,3 +102,7 @@ a {
 	width:300px;
 	height:700px;
 } 
+
+.indexContent > img {
+	max-width:100%;
+}

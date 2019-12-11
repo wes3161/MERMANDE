@@ -89,6 +89,11 @@ a {
 	border:1px black solid;
 }
 
+div > .ad{
+	height:auto;
+	max-width:20%;
+}
+
 #ad1div {
 	margin:auto;
 	float:left;
@@ -97,7 +102,8 @@ a {
 }
 
 #ad2div {
-	margin:auto;
+	margin-top:100px;
+	margin-right:50px;
 	float:right;
 	width:300px;
 	height:700px;

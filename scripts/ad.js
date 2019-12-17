@@ -1,32 +1,96 @@
 window.addEventListener("load", ad);
 
 function ad(){
+var overRide = true;
 
-var pos1 = Math.floor(Math.random() * 6 + 1);
-var pos2 = Math.floor(Math.random() * 6 + 1);
+if(document.URL == "https://mermande.com/disable.html"){
+	overRide = false;
 
-document.getElementById("ad1").src = "photos/ads/" + pos1 + ".jpg";
-document.getElementById("ad2").src = "photos/ads/" + pos2 + ".jpg";
+	document.getElementById("annoyance1").src = "photos/ads/disable1.png";
+	document.getElementById("annoyance2").src = "photos/ads/disable2.png";
+	document.getElementById("headerImage").src = "photos/ads/disable3.png";
+	document.body.style.backgroundImage = "url('photos/ads/disable4.png')";
 
-var popupChance = Math.floor((Math.random() * 4) + 1);
+	document.getElementById("no").addEventListener("click", playSound);
+	document.getElementById("yes").addEventListener("click", function (){window.location.assign('ad.html');});
+}
 
-var error = 0;
+if(document.URL == "https://mermande.com/ad.html"){
+	overRide = false;
 
-if (popupChance == 1) {
-	i = 1;
-	while (i<5) {
- 		if (!confirm("Please Disable You're Adblocker!")){
-			i = 6;
-			error = 1;
-			document.getElementById("ad1").src = "photos/ads/disable1.png";
-			document.getElementById("ad2").src = "photos/ads/disable2.png";
-			document.getElementById("headerImage").src = "photos/ads/disable3.png";
-			document.body.style.backgroundImage = "url('photos/ads/disable4.png')";
+	document.getElementById("mainHeader").style.border = "transparent";
+	document.getElementById("headerImage").style.display = "none";
+	document.body.style.backgroundImage = "none";
+	document.body.style.backgroundColor = "white";
+
+	var buttonDiv = document.createElement("div");
+	buttonDiv.id = "d1";
+	buttonDiv.style.position = "sticky";
+	document.getElementById("adBody").appendChild(buttonDiv);
+
+	var imageTimes = Math.floor(Math.random() * 100 + 7);
+	for(i = 0; i < 100; i++){
+		var image = Math.floor(Math.random() * 25 + 1);
+		var imageWidth = Math.floor(Math.random() * 10 + 5);
+		var imageMargin = Math.floor(Math.random() * 20 + 1);
+
+		var buttonImage = document.createElement("img");
+		buttonImage.style.maxWidth = imageWidth + "%";
+		buttonImage.style.marginLeft = imageMargin + "%";
+		if(image <= 15){
+			buttonImage.src = "photos/ads/d" + image + ".jpg";
 		} else {
- 			i = i + 1;
-		};
-	};
-	popupChance = 0;
-}; 
+			buttonImage.src = "photos/ads/d" + image + ".gif";
+		}
+		document.getElementById("d1").appendChild(buttonImage);
+	}
+}
 
-};
+if(overRide == true){
+	var pos1 = Math.floor(Math.random() * 6 + 1);
+	var pos2 = Math.floor(Math.random() * 6 + 1);
+
+	document.getElementById("annoyance1").src = "photos/ads/" + pos1 + ".jpg";
+	document.getElementById("annoyance2").src = "photos/ads/" + pos2 + ".jpg";
+
+	var popupChance = Math.floor((Math.random() * 4) + 1);
+
+	var error = 0;
+
+	if (popupChance == 1) {
+		i = 1;
+		while (i<5) {
+	 		if (!confirm("Please Disable You're Adblocker!")){
+				i = 6;
+				error = 1;
+				document.getElementById("annoyance1").src = "photos/ads/disable1.png";
+				document.getElementById("annoyance2").src = "photos/ads/disable2.png";
+				document.getElementById("headerImage").src = "photos/ads/disable3.png";
+				document.body.style.backgroundImage = "url('photos/ads/disable4.png')";
+			} else {
+	 			i++;
+			}
+		}
+		popupChance = 0;
+	}
+
+}
+
+document.getElementById("annoyance1").addEventListener("click", adClick);
+document.getElementById("annoyance2").addEventListener("click", adClick);
+
+function adClick(){
+	if(error == 0){
+		window.location.assign('ad.html');
+	} else {
+		window.location.assign('disable.html');
+	}
+}
+
+
+function playSound(){
+	var audio = new Audio("sounds/error.wav");
+	audio.play();
+}
+
+}

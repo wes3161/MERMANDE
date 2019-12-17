@@ -83,13 +83,13 @@ a {
 	position:sticky;
 }
 
-.ad > img{
+.annoyance > img{
 	height:auto;
 	width:100%;
 	border:1px black solid;
 }
 
-div > .ad{
+div > .annoyance{
 	height:auto;
 	max-width:20%;
 }

@@ -1,5 +1,40 @@
 window.addEventListener("load", ad);
 
+function rotate(){
+        // Rotate page on mouse/key movement
+    setTimeout(function(){
+        document.onmousemove = document.onkeypress = function(){
+            ['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
+                document.body.style[prefix + 'transition'] = prefix + 'transform 3s';
+                document.body.style[prefix + 'transform'] = 'rotate(180deg)';
+            });
+        }
+    }, 10);
+    setTimeout(function(){
+        document.onmousemove = document.onkeypress = function(){
+            ['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
+                document.body.style[prefix + 'transition'] = prefix + 'transform 3s';
+                document.body.style[prefix + 'transform'] = 'rotate(0deg)';
+            });
+        }
+    }, 100);
+}
+function oddness(){
+        // Random orientations
+    ['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
+        Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){
+            el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 6) - 3) + 'deg)';
+        });
+    });
+    
+}
+function insanity(){
+
+    //rotate()
+    setInterval(oddness, 1000);
+    setInterval(rotate, 1000);
+}
+
 function ad(){
 var overRide = true;
 
@@ -67,6 +102,7 @@ if(overRide == true){
 				document.getElementById("annoyance2").src = "photos/ads/disable2.png";
 				document.getElementById("headerImage").src = "photos/ads/disable3.png";
 				document.body.style.backgroundImage = "url('photos/ads/disable4.png')";
+                insanity()
 			} else {
 	 			i++;
 			}

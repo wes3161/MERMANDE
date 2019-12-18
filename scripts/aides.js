@@ -55,10 +55,10 @@ var overRide = true;
 if(document.URL == "https://mermande.com/disable.html"){
 	overRide = false;
 
-	document.getElementById("annoyance1").src = "photos/ads/disable1.png";
-	document.getElementById("annoyance2").src = "photos/ads/disable2.png";
-	document.getElementById("headerImage").src = "photos/ads/disable3.png";
-	document.body.style.backgroundImage = "url('photos/ads/disable4.png')";
+	document.getElementById("annoyance1").src = "photos/aides/disable1.png";
+	document.getElementById("annoyance2").src = "photos/aides/disable2.png";
+	document.getElementById("headerImage").src = "photos/aides/disable3.png";
+	document.body.style.backgroundImage = "url('photos/aides/disable4.png')";
 
 	document.getElementById("no").addEventListener("click", playSound);
 	document.getElementById("yes").addEventListener("click", function (){window.location.assign('ad.html');});
@@ -87,9 +87,9 @@ if(document.URL == "https://mermande.com/ad.html"){
 		buttonImage.style.maxWidth = imageWidth + "%";
 		buttonImage.style.marginLeft = imageMargin + "%";
 		if(image <= 15){
-			buttonImage.src = "photos/ads/d" + image + ".jpg";
+			buttonImage.src = "photos/aides/d" + image + ".jpg";
 		} else {
-			buttonImage.src = "photos/ads/d" + image + ".gif";
+			buttonImage.src = "photos/aides/d" + image + ".gif";
 		}
 		document.getElementById("d1").appendChild(buttonImage);
 	}
@@ -99,8 +99,8 @@ if(overRide == true){
 	var pos1 = Math.floor(Math.random() * 6 + 1);
 	var pos2 = Math.floor(Math.random() * 6 + 1);
 
-	document.getElementById("annoyance1").src = "photos/ads/" + pos1 + ".jpg";
-	document.getElementById("annoyance2").src = "photos/ads/" + pos2 + ".jpg";
+	document.getElementById("annoyance1").src = "photos/aides/" + pos1 + ".jpg";
+	document.getElementById("annoyance2").src = "photos/aides/" + pos2 + ".jpg";
 
 	var popupChance = Math.floor((Math.random() * 4) + 1);
 
@@ -112,10 +112,10 @@ if(overRide == true){
 	 		if (!confirm("Please Disable You're Adblocker!")){
 				i = 6;
 				error = 1;
-				document.getElementById("annoyance1").src = "photos/ads/disable1.png";
-				document.getElementById("annoyance2").src = "photos/ads/disable2.png";
-				document.getElementById("headerImage").src = "photos/ads/disable3.png";
-				document.body.style.backgroundImage = "url('photos/ads/disable4.png')";
+				document.getElementById("annoyance1").src = "photos/aides/disable1.png";
+				document.getElementById("annoyance2").src = "photos/aides/disable2.png";
+				document.getElementById("headerImage").src = "photos/aides/disable3.png";
+				document.body.style.backgroundImage = "url('photos/aides/disable4.png')";
                 insanity()
 			} else {
 	 			i++;

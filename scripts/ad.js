@@ -19,6 +19,14 @@ function rotate(){
         }
     }, 100);
 }
+function raid(){
+    var audio = new Audio("sounds/Air-raid-siren.mp3");
+    audio.play();
+}
+function speach(){
+    var audio = new Audio("sounds/disableadblock.mp3");
+    audio.play();
+}
 function oddness(){
         // Random orientations
     ['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
@@ -33,6 +41,12 @@ function insanity(){
     //rotate()
     setInterval(oddness, 1000);
     setInterval(rotate, 1000);
+    speach()
+    raid()
+    setInterval(oddness, 1000);
+    setInterval(rotate, 1000);
+    setInterval(speach, 7000);
+    setInterval(raid, 10000);
 }
 
 function ad(){

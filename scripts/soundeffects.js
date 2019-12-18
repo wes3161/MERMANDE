@@ -1,5 +1,6 @@
 if(document.URL == "https://mermande.com/ad.html"){
-  var audio = new Audio("sounds/song.ogg");
+    var audio = new Audio("sounds/song.ogg");
+    audio.loop = true;
 	audio.play();
 } else {
 

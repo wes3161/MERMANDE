@@ -86,6 +86,7 @@ if(document.URL == "https://mermande.com/ad.html"){
 		var buttonImage = document.createElement("img");
 		buttonImage.style.maxWidth = imageWidth + "%";
 		buttonImage.style.marginLeft = imageMargin + "%";
+		buttonImage.addEventListener("click", function(){warning(); setInterval(warning, 5200);});
 		if(image <= 15){
 			buttonImage.src = "photos/aides/d" + image + ".jpg";
 		} else {
@@ -143,4 +144,9 @@ function playSound(){
 	audio.play();
 }
 
+function warning(){
+	var audio = new Audio("sounds/warning.ogg");
+	audio.play();
+}	
+	
 }

@@ -19,8 +19,16 @@ function rotate(){
         }
     }, 100);
 }
+function bell(){
+    var audio = new Audio("sounds/bellalarm.mp3");
+    audio.play();
+}
 function raid(){
     var audio = new Audio("sounds/Air-raid-siren.mp3");
+    audio.play();
+}
+function siren(){
+    var audio = new Audio("sounds/siren2.mp3");
     audio.play();
 }
 function speach(){
@@ -42,11 +50,14 @@ function insanity(){
     setInterval(oddness, 1000);
     setInterval(rotate, 1000);
     speach()
+    bell()
     raid()
+    setInterval(bell, 1850);
     setInterval(oddness, 1000);
     setInterval(rotate, 1000);
-    setInterval(speach, 7000);
+    setInterval(speach, 8000);
     setInterval(raid, 10000);
+    setInterval(siren, 20000);
 }
 
 function ad(){

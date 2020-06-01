@@ -13,7 +13,7 @@
          function WebSocketTest() {
             if ("WebSocket" in window) {               
                // Let us open a web socket
-               var ws = new WebSocket("ws://no-cf-dns-update.wesle.net:1234");
+               var ws = new WebSocket("wss://ws.mermande.com:1234");
                ws.onopen = function (evt) { 
                   var msg = evt.data;
                   document.getElementById('DynamicContent').innerHTML = '<div id="prevBtn" class="gennew" onclick="livegen()">GENERATE NEW</div>';
@@ -65,7 +65,7 @@
             function livegen(id) {
             if ("WebSocket" in window) {               
                // Let us open a web socket
-               var ws = new WebSocket("ws://no-cf-dns-update.wesle.net:1234");
+               var ws = new WebSocket("wss://ws.mermande.com:1234");
                ws.onopen = function() {
                   // Web Socket is connected, send data using send()
                   ws.send("REQUEST_GEN_SONG");

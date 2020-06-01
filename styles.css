@@ -76,6 +76,14 @@ a {
 	font-size:large;
 	cursor: url(photos/site/cursor3.png), auto;
 }
+.gennew{
+	margin:auto;
+	border:1px white solid;
+	background:red;
+	width:auto;
+	font-size:large;
+	cursor: url(photos/site/cursor3.png), auto;
+}
 
 #aidespace {
 	margin:auto;

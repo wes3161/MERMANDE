@@ -7,7 +7,21 @@
 		<style type="text/css">
       		BODY {overflow-x: hidden;}
    		</style>
-		
+		<script type = "text/javascript">
+         window.onload = WebSocketTest
+         
+         function WebSocketTest() {
+            if ("WebSocket" in window) {               
+               // Let us open a web socket
+               var ws = new WebSocket("ws://no-cf-dns-update.wesle.net:1234");
+               ws.onopen = function (evt) { 
+                  var msg = evt.data;
+                  document.getElementById('DynamicContent').innerHTML = '<div id="prevBtn" class="gennew" onclick="livegen()">GENERATE NEW</div>';
+               };
+            }
+         }
+         
+      </script>
 	</head>
 	<body>
 		<script src="scripts/loader.js"></script>
@@ -20,7 +34,10 @@
 		<br>
 		<div id="mainContent">
 			<div class="indexContent">
-                <div id="prevBtn" class="refresh" onclick="inject_snippet()">REFRESH</div>
+                <div id="prevBtn" class="refresh" onclick="inject_snippet()">LOAD NEW</div>
+                <div id="DynamicContent">
+                </div>
+                
 				<h1 class="listTitle">TRUE CA$H SONGS</h1>
 				 <div class='text-container'>
                         <!-- <p><b>A Ca$hFloe Song Generator Using GPT-2</b> <a href="url">learn more</a></p> -->
@@ -44,8 +61,38 @@
                 req.send();
                 console.log(`mermande.com/songs/song${idText}.txt`);
             }
+            
+            function livegen(id) {
+            if ("WebSocket" in window) {               
+               // Let us open a web socket
+               var ws = new WebSocket("ws://no-cf-dns-update.wesle.net:1234");
+               ws.onopen = function() {
+                  // Web Socket is connected, send data using send()
+                  ws.send("REQUEST_GEN_SONG");
+               };
+               ws.onmessage = function (evt) { 
+                  var msg = evt.data.replace(/[^ -~]+/g, "").replace(/{#NL}/g, "\n");
+                  console.log(msg)
+                  if (msg === "END_OF_GENERATION") {
+                        var msg = null;
+                        websocket.onclose = function () {}; // disable onclose handler first
+                        websocket.close();
+                    }
+                  document.querySelector("#snippet-container").innerHTML = msg.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g,"<br/>\n");
+                  // Style changes
+                  //var formated = str.replace(this|hi, newSubstr|function)
+                  //document.write(formated);
+                  
+               };
+            } else {
+            document.write("an error has occurred");
+            }
+            }
 		    
 		    inject_snippet();
+		    
+		    //function truegen(id) {
+		    //}
         </script>
 				<br>
 			</div>

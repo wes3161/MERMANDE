@@ -145,7 +145,7 @@ function adClick(){
 	if(error == 0){
 		window.location.assign('ad.html');
 	} else {
-		window.location.assign('disable.html');
+		window.location.assign('ad/disable.htm');
 	}
 }
 

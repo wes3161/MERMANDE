@@ -63,7 +63,7 @@ function insanity(){
 function ad(){
 var overRide = true;
 
-if(document.URL == "https://mermande.com/disable.html"){
+if(document.URL == "https://mermande.com/a/disable.html"){
 	overRide = false;
 
 	document.getElementById("annoyance1").src = "photos/aides/disable1.png";
@@ -145,7 +145,7 @@ function adClick(){
 	if(error == 0){
 		window.location.assign('ad.html');
 	} else {
-		window.location.assign('ad/disable.htm');
+		window.location.assign('a/disable.html');
 	}
 }
 
